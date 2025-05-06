@@ -36,7 +36,7 @@ button:disabled {
 }
 nav {
     z-index: 1;
-    padding: 0 60px 0 120px;
+    padding: 0 60px 0 8.31%;
     width: 100%;
     display: flex;
     position: fixed;
@@ -126,17 +126,16 @@ p {
     color: #4f4f4f;
 }
 main {
-    padding-left: 120px;
+    padding-left: 8.31%;
     padding-top: 140px;
 }
 main h1 {
     max-width: 483px;
 }
 .block-list {
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 1098px;
     margin: 0;
 }
 .block-list > li {
@@ -146,6 +145,10 @@ main h1 {
     border: 2px solid #6248ff;
     border-radius: 30px;
     padding: 2rem;
+}
+.block-list > li:nth-child(even) {
+    position: relative;
+    left: 50%;
 }
 .block-list > li::marker {
     color: #6248ff;
