@@ -124,3 +124,16 @@ p {
     line-height: 30px;
     color: #4f4f4f;
 }
+main {
+    padding-left: 120px;
+    padding-top: 140px;
+}
+main h1 {
+    max-width: 483px;
+}
+.block-list {
+    margin: 0;
+}
+.background-purple {
+    background-color: hsl(249, 100%, 64%, 10%);
+}
