@@ -154,7 +154,6 @@ p {
 }
 main {
     padding: 140px 8.31% 0 8.31%;
-    padding-left: 8.31%;
 }
 main h1 {
     font-size: 56px;
@@ -362,7 +361,7 @@ div[class^="line"] {
     padding: 2rem 0;
 }
 form {
-    padding: 3rem 0;
+    padding: 4rem 0;
     min-width: min(585px, 90%);
     border: 2px solid #6248ff;
     background-color: white;
@@ -613,11 +612,28 @@ footer h3 {
 @media screen and (width<1295px) {
     .header-main {
         justify-content: center;
-        gap: 4rem;
+        gap: 2rem;
         align-items: center;
     }
     .header-main-content {
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (width>1500px) {
+    .header-main {
+        padding: 0 12% 0 12%;
+    }
+    nav {
+        padding: 0 8% 0 12%;
+    }
+    footer {
+        padding: 2rem 12% 4rem 12%;
+    }
+    .contact-section {
+        padding: 120px 12% 120px 12%;
+    }
+    main {
+        padding: 140px 12% 0 12%;
     }
 }
