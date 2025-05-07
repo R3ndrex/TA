@@ -358,7 +358,7 @@ form {
 }
 form input,
 textarea {
-    width: 75%;
+    width: 100%;
 }
 input,
 textarea {
@@ -456,6 +456,29 @@ footer h3 {
         order: 2;
         flex-direction: row;
     }
+}
+input + span {
+    font-size: 15px;
+    line-height: 16px;
+    color: #eb5757;
+}
+input[type="text"]:user-invalid + span::after,
+textarea:user-invalid + span::after {
+    content: "This field is required";
+}
+input:focus {
+    color: #4f4f4f;
+    outline: 1px solid #828282;
+}
+input:valid,
+textarea:valid {
+    color: #4f4f4f;
+    outline: 1px solid #0eac00;
+}
+input:user-invalid,
+textarea:user-invalid {
+    color: #4f4f4f;
+    outline: 1px solid #eb5757;
 }
 @media screen and (width<800px) {
     .review-section {
