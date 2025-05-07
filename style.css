@@ -341,6 +341,7 @@ textarea {
 input,
 textarea {
     font-size: 16px;
+    font-family: "Montserrat", sans-serif;
     color: #828282;
     padding: 0.5rem 1rem;
     border: none;
