@@ -146,7 +146,7 @@ main h1 {
     border-radius: 30px;
     padding: 2rem;
 }
-.block-list > li:nth-child(even) {
+.line-right + li {
     left: 150%;
 }
 .block-list > li:nth-child(2) {
@@ -164,4 +164,21 @@ main h1 {
 }
 .background-purple {
     background-color: hsl(249, 100%, 64%, 10%);
+}
+div[class^="line"] {
+    border-top: 2px dashed #6c47ff;
+    max-width: 483px;
+    height: 100px;
+}
+.line-right {
+    position: relative;
+    left: 100%;
+    top: -100px;
+    border-right: 2px dashed #6c47ff;
+}
+.line-left {
+    position: relative;
+    left: 50%;
+    top: -100px;
+    border-left: 2px dashed #6c47ff;
 }
