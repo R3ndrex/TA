@@ -24,7 +24,9 @@ h3 {
     color: #333333;
 }
 h4 {
-    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 0.25rem;
 }
 button {
     border: none;
@@ -309,7 +311,7 @@ div[class^="line"] {
     background-color: hsl(249, 100%, 64%, 10%);
     min-height: 739px;
     display: flex;
-    gap: 20%;
+    gap: 5%;
     justify-content: center;
     list-style-type: none;
 }
@@ -317,6 +319,9 @@ div[class^="line"] {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+.margin {
+    padding: 2rem 0;
 }
 form {
     min-width: 585px;
