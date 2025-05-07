@@ -132,12 +132,15 @@ main h1 {
     line-height: 66px;
 }
 .block-list {
+    position: relative;
     padding: 4rem 0;
     display: inline-flex;
     flex-direction: column;
     margin: 0;
 }
 .block-list > li {
+    z-index: 1;
+    background-color: white;
     position: relative;
     max-width: 483px;
     list-style-type: decimal-leading-zero;
@@ -149,13 +152,13 @@ main h1 {
 .line-right + li {
     left: 150%;
 }
-.block-list > li:nth-child(2) {
+.block-list > li:nth-child(3) {
     top: -50px;
 }
-.block-list > li:nth-child(3) {
+.block-list > li:nth-child(5) {
     top: calc(-50px * 2);
 }
-.block-list > li:nth-child(4) {
+.block-list > li:nth-child(7) {
     top: calc(-50px * 3);
 }
 .block-list > li::marker {
@@ -166,19 +169,25 @@ main h1 {
     background-color: hsl(249, 100%, 64%, 10%);
 }
 div[class^="line"] {
-    border-top: 2px dashed #6c47ff;
-    max-width: 483px;
+    position: absolute;
+    border-radius: 1rem;
+    border-top: 3px dotted #6c47ff;
+    width: 583px;
     height: 100px;
 }
 .line-right {
-    position: relative;
-    left: 100%;
-    top: -100px;
+    left: 90%;
+}
+.line-right:first-of-type {
+    top: 15%;
+    border-right: 2px dashed #6c47ff;
+}
+.line-right:last-of-type {
+    top: 50%;
     border-right: 2px dashed #6c47ff;
 }
 .line-left {
-    position: relative;
+    top: 35%;
     left: 50%;
-    top: -100px;
     border-left: 2px dashed #6c47ff;
 }
