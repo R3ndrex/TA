@@ -200,7 +200,7 @@ div[class^="line"] {
     border-right: 2px dashed #6c47ff;
 }
 .line-right:last-of-type {
-    top: 45%;
+    top: 47%;
     border-right: 2px dashed #6c47ff;
 }
 .line-left {
@@ -253,8 +253,7 @@ div[class^="line"] {
 .qoutes {
     align-self: center;
     color: white;
-    -webkit-text-stroke: 2px #6248ff; /* Обводка */
-
+    -webkit-text-stroke: 2px #6248ff;
     font-size: 56px;
 }
 .review-iterator {
@@ -300,5 +299,8 @@ div[class^="line"] {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    header img {
+        width: min(418px, 100%);
     }
 }
