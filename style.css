@@ -44,7 +44,7 @@ button:disabled {
     background-color: #e0e0e0;
 }
 nav {
-    z-index: 1;
+    z-index: 2;
     padding: 0 60px 0 8.31%;
     width: 100%;
     display: flex;
@@ -120,8 +120,8 @@ select {
     align-items: start;
 }
 .header-main > img {
-    width: 482px;
-    height: 519px;
+    max-width: 482px;
+    max-height: 519px;
 }
 .header-main p {
     max-width: 483px;
@@ -224,20 +224,43 @@ div[class^="line"] {
 }
 .circle-button-container {
     grid-row: 2/3;
-    margin: 3rem 0;
+    margin: 2rem 0 3rem 0;
 }
 .person-info {
-    display: flex;
+    align-items: center;
+    display: grid;
+    gap: 0.25rem 1rem;
+    padding: 1rem 0;
+    grid-template-columns: min-content 1fr;
 }
 .person-info img {
+    grid-row: 1/3;
     border-radius: 50%;
     width: 73px;
 }
+.person-info h3 {
+    font-size: 18px;
+}
+.person-info p {
+    font-size: 16px;
+    line-height: 27px;
+}
 .review-section {
+    padding-bottom: 64px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr min-content 1fr;
+}
+.qoutes {
+    align-self: center;
+    color: white;
+    -webkit-text-stroke: 2px #6248ff; /* Обводка */
+
+    font-size: 56px;
 }
 .review-iterator {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-self: end;
     font-weight: 500;
     color: #6248ff;
 }
