@@ -151,7 +151,7 @@ main h1 {
 .block-list {
     position: relative;
     padding: 4rem 0;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     margin: 0;
 }
@@ -159,7 +159,7 @@ main h1 {
     z-index: 1;
     background-color: white;
     position: relative;
-    max-width: 483px;
+    width: 50%;
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
     border: 2px solid #6248ff;
@@ -167,7 +167,7 @@ main h1 {
     padding: 2rem;
 }
 .line-right + li {
-    left: 150%;
+    left: 55%;
 }
 .block-list > li:nth-child(3) {
     top: -50px;
@@ -189,23 +189,23 @@ div[class^="line"] {
     position: absolute;
     border-radius: 1rem;
     border-top: 3px dotted #6c47ff;
-    width: 583px;
+    width: 60%;
     height: 100px;
 }
 .line-right {
-    left: 90%;
+    left: 20%;
 }
 .line-right:first-of-type {
     top: 15%;
     border-right: 2px dashed #6c47ff;
 }
 .line-right:last-of-type {
-    top: 50%;
+    top: 45%;
     border-right: 2px dashed #6c47ff;
 }
 .line-left {
-    top: 35%;
-    left: 50%;
+    top: 30%;
+    left: 25%;
     border-left: 2px dashed #6c47ff;
 }
 .circle-button {
