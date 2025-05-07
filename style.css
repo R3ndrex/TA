@@ -82,8 +82,9 @@ select {
     gap: 1.5rem;
 }
 .header-main {
+    padding: 0 8.31% 0 8.31%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     top: 80px;
@@ -99,10 +100,6 @@ select {
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-}
-.header-main-content,
-.header-main > img {
-    margin: 0 60px 0 120px;
 }
 .header-main > img {
     width: 482px;
