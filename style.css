@@ -131,6 +131,7 @@ select {
 .header-main > img {
     max-width: 482px;
     max-height: 519px;
+    padding-bottom: 2rem;
 }
 .header-main p {
     max-width: 483px;
@@ -332,7 +333,7 @@ div[class^="line"] {
     padding: 2rem 0;
 }
 form {
-    padding: 1rem 0;
+    padding: 3rem 0;
     min-width: min(585px, 90%);
     border: 2px solid #6248ff;
     background-color: white;
@@ -450,6 +451,37 @@ footer h3 {
         grid-template-columns: min-content 1fr min-content;
     }
 }
+@media screen and (width<500px) {
+    nav button {
+        display: none;
+    }
+    nav h2 {
+        display: block;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+}
+
+@media screen and (width<710px) {
+    div[class^="line"] {
+        display: none;
+    }
+    .block-list {
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .block-list li {
+        width: 100%;
+        position: static;
+    }
+}
+
 @media screen and (width<1350px) {
     .contact-section {
         justify-content: center;
@@ -464,6 +496,10 @@ footer h3 {
     .header-main {
         justify-content: center;
         gap: 4rem;
+        align-items: center;
+    }
+    .header-main-content {
+        justify-content: center;
         align-items: center;
     }
 }
