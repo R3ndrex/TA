@@ -13,6 +13,7 @@
 body {
     padding: 0;
     margin: 0;
+    width: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
@@ -114,12 +115,12 @@ select {
     align-items: center;
     position: relative;
     top: 80px;
-    height: 720px;
+    min-height: 720px;
     color: #333333;
     background-color: hsl(249, 100%, 64%, 10%);
 }
 .header-main-content {
-    max-height: 398px;
+    padding: 2rem 0;
     width: 585px;
     display: flex;
     gap: 2.5rem;
@@ -314,9 +315,13 @@ div[class^="line"] {
     background-color: hsl(249, 100%, 64%, 10%);
     min-height: 739px;
     display: flex;
-    gap: 5%;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem 5%;
+    justify-content: space-between;
     list-style-type: none;
+}
+.contact-section div {
+    width: min(483px, 90%);
 }
 .contact-section ul {
     margin: 0;
@@ -327,7 +332,8 @@ div[class^="line"] {
     padding: 2rem 0;
 }
 form {
-    min-width: 585px;
+    padding: 1rem 0;
+    min-width: min(585px, 90%);
     border: 2px solid #6248ff;
     background-color: white;
     border-radius: 20px;
@@ -407,5 +413,57 @@ footer h3 {
     }
     header img {
         width: min(418px, 100%);
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer h2 {
+        order: 0;
+        align-self: center;
+    }
+
+    footer section:nth-of-type(1) {
+        order: 3;
+    }
+
+    footer section:nth-of-type(2) {
+        order: 4;
+    }
+
+    footer .legal-list {
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        order: 5;
+    }
+
+    footer .info-list {
+        flex-wrap: wrap;
+        order: 2;
+        flex-direction: row;
+    }
+}
+@media screen and (width<800px) {
+    .review-section {
+        justify-content: center;
+        grid-template-columns: min-content 1fr min-content;
+    }
+}
+@media screen and (width<1350px) {
+    .contact-section {
+        justify-content: center;
+    }
+}
+@media screen and (width<320px) {
+    footer .info-list {
+        flex-direction: column;
+    }
+}
+@media screen and (width<1295px) {
+    .header-main {
+        justify-content: center;
+        gap: 4rem;
+        align-items: center;
     }
 }
