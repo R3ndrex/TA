@@ -547,6 +547,9 @@ footer h3 {
     }
 }
 @media screen and (width<500px) {
+    .header-main {
+        text-align: start;
+    }
     nav button {
         display: none;
     }
@@ -614,6 +617,9 @@ footer h3 {
         justify-content: center;
         gap: 2rem;
         align-items: center;
+    }
+    .header-main {
+        text-align: center;
     }
     .header-main-content {
         justify-content: center;
