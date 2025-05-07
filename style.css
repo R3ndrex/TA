@@ -60,8 +60,17 @@ nav ul {
     margin: 0;
     margin-left: 4rem;
     list-style-type: none;
-
     padding: 0;
+}
+.burger {
+    padding: 0.2rem;
+    display: none;
+    height: 24px;
+}
+
+.burger > * {
+    border-top: 3px solid black;
+    width: 24px;
 }
 li {
     font-size: 15px;
@@ -190,4 +199,20 @@ div[class^="line"] {
     top: 35%;
     left: 50%;
     border-left: 2px dashed #6c47ff;
+}
+@media screen and (width<1100px) {
+    nav ul,
+    nav select,
+    nav h2 {
+        display: none;
+    }
+    nav {
+        justify-content: end;
+        gap: 3rem;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
