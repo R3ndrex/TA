@@ -499,6 +499,14 @@ footer h3 {
 }
 
 @media screen and (width<800px) {
+    footer h3 {
+        text-align: center;
+    }
+
+    footer section {
+        width: 80%;
+        align-self: center;
+    }
     .review-section {
         position: relative;
         justify-content: center;
@@ -577,6 +585,13 @@ footer h3 {
         justify-self: end;
         grid-row: 5/6;
         grid-column: 3/4;
+    }
+    footer h3 {
+        text-align: start;
+    }
+    footer section {
+        width: 100%;
+        align-self: start;
     }
 }
 
