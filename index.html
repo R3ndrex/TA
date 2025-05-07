@@ -244,13 +244,23 @@
                 </ul>
             </div>
             <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                ></textarea>
+                <div>
+                    <input required type="text" placeholder="Name" />
+                    <span></span>
+                </div>
+                <div>
+                    <input required type="email" placeholder="Email" />
+                    <span></span>
+                </div>
+                <div>
+                    <textarea
+                        required
+                        name="message"
+                        id="message"
+                        placeholder="Message"
+                    ></textarea>
+                    <span></span>
+                </div>
                 <button type="submit">Send</button>
             </form>
         </section>
